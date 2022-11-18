@@ -12,7 +12,7 @@ $id = uniqid();
 $sql="INSERT INTO users (ID, nombre, apellidos, email, pswd) VALUES ('$id', '$uname', '$auname', '$uemail', '$pswd')";
 
 if (mysqli_query($conn, $sql)){
-    echo "Registro añadido correctamente 👏 <br>";
+//    echo "Registro añadido correctamente 👏 <br>";
 }else{
     echo "Fallo al ingreasar el registro en: " . $sql . mysqli_error($conn);
 }
