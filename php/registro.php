@@ -13,6 +13,7 @@ $sql="INSERT INTO users (ID, nombre, apellidos, email, pswd) VALUES ('$id', '$un
 
 if (mysqli_query($conn, $sql)){
 //    echo "Registro añadido correctamente 👏 <br>";
+    header("location: ../index.html");
 }else{
     echo "Fallo al ingreasar el registro en: " . $sql . mysqli_error($conn);
 }
