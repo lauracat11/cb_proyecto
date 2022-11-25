@@ -21,7 +21,7 @@ $count = mysqli_num_rows($result);
 //     echo "0 results";
 //     }
 
-$sql_admin = "SELECT * FROM users WHERE ID = '6380d7a6ecc58' AND pswd='$pswd' AND email='$uemail'";
+$sql_admin = "SELECT * FROM users WHERE ID ='6380d7a6ecc58' AND pswd='$pswd' AND email='$uemail'";
 $admin_res = mysqli_query($conn,$sql_admin);
 $admin_count = mysqli_num_rows($admin_res);
 
