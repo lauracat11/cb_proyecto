@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "@LauraCata11*";
+$password = "";
 $db_name ="circuit_barcelona";
 
 //Creación de la conexión

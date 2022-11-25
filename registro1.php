@@ -55,6 +55,15 @@
                         <button type="submit">Register</button>
                         <p class="crear-cuenta">¿Ya tienes una cuenta? <a href="login.html">Accede ahora</a></p>
                     </form>
+
+                    <?php 
+                        if (isset($__GE['err'])){
+                            $err = $__GET['err'];
+                            if ($err!=''){
+                                echo $err;
+                            }
+                        }
+                    ?>
                 </div>
             </div>
         </div>
