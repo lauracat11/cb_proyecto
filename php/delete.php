@@ -2,7 +2,7 @@
 require ("header.php");
 // Eliminar datos
 
-$sql="DELETE FROM users";
+$sql="DELETE FROM users WHERE ID='1'";
 
 if (mysqli_query($conn, $sql)){
     echo "Eliminado correctamente 😶 <br>";
