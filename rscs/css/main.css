@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,700,700i,900,900i');
 
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--rojoP);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--rojoP);
+}
+
 html {
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 1px;
@@ -27,9 +44,82 @@ body {
     border: 0;
 }
 
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOpacity2 {
+    0% {
+        opacity: 0;
+    }
+
+    95% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 /* ------------------------------------------------ */
 /* ------------------------------------------------ */
 /* ------------------------------------------------ */
+
+/* -------------------MAPA------------------------- */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+.container-map {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.container-map img {
+    display: block;
+    transition: transform 2s;
+}
+
+.mapa_paddock {
+    position: relative;
+    transform-origin: 55% 55%;
+    transition: transform 2s, filter 3s ease-in-out;
+    transform: scale(7);
+}
+
+.mapa_paddock_back {
+    position: relative;
+    transform-origin: 55% 55%;
+    transition: transform 2s, filter 3s ease-in-out;
+    transform: scale(1);
+}
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* -------------------MAPA------------------------- */
+
+.flechaatras{
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../imgs/flechaatras.png");
+    width: 25px;
+    height: 25px;
+    margin-left: 30%;
+    margin-top: -37%;
+}
+
+.flechaatras:hover{
+    cursor: pointer;
+}
 
 
 ul {
@@ -128,14 +218,27 @@ li a {
     margin-top: -2%;
 }
 
+.letrasmenuscroll:hover {
+    cursor: pointer;
+}
+
+.fotosscroll:hover {
+    cursor: pointer;
+}
+
+/* ----------------------------POLIGONOS------------------------------ */
 .poligon {
     position: absolute;
     background-color: var(--rojoP);
     opacity: 40%;
     width: 80px;
     height: 47px;
-    margin-left: 62.6%;
-    margin-top: -14.2%;
+    margin-left: 64%;
+    margin-top: -20%;
+    animation-name: fadeInOpacity2;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
 }
 
 .poligon:hover {
@@ -152,6 +255,10 @@ li a {
     border-bottom: 20px solid var(--rojoP);
     margin-left: 80px;
     margin-top: -0.5px;
+    animation-name: fadeInOpacity2;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
 }
 
 .poligon2:hover {
@@ -166,6 +273,10 @@ li a {
     height: 27.5px;
     margin-top: 20px;
     margin-left: -100px;
+    animation-name: fadeInOpacity2;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
 
 }
 
@@ -177,13 +288,17 @@ li a {
 .poligon4 {
     background-color: var(--rojoP);
     position: absolute;
-    width: 105px;
-    height: 30px;
-    margin-left: 510px;
-    margin-top: -180px;
+    width: 6%;
+    height: 5%;
+    margin-left: 45.5%;
+    margin-top: -19%;
     border-radius: 50%;
-    transform: rotate(40deg);
+    transform: rotate(33deg);
     opacity: 40%;
+    animation-name: fadeInOpacity2;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
 }
 
 .poligon4:hover {
@@ -194,21 +309,142 @@ li a {
 .poligon5 {
     background-color: var(--rojoP);
     position: absolute;
-    width: 135px;
-    height: 50px;
+    width: 9%;
+    height: 6.5%;
     transform: skew(70deg);
     opacity: 40%;
-    margin-left: 64%;
-    margin-top: -9%
+    margin-left: 66%;
+    margin-top: -15.5%;
+    animation-name: fadeInOpacity2;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
 }
 
 .poligon5:hover {
     opacity: 70%;
     cursor: pointer;
 }
-.poligon6{
+
+.poligon6,
+
+.poligonoeliminado {
+    width: 0px;
+    height: 0px;
+    opacity: 0%;
+}
+
+
+/* ----------------------------POLIGONOS------------------------------ */
+
+
+
+
+/* ----------------------------MARCADORES------------------------------ */
+
+.marcador1 {
+    position: absolute;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    margin-left: 65%;
+    margin-top: -30%;
+    background-image: url("../imgs/marcador.png");
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
 
 }
-.fondo{
-    background-color: green;
+
+
+.marcador1:hover {
+    cursor: pointer;
+}
+
+/* ----------------------------MARCADORES------------------------------ */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+
+.generarBoxes {
+    position: absolute;
+    width: 475px;
+    height: 450px;
+    margin-left: 45%;
+    margin-top: -37%;
+    background: linear-gradient(var(--rojoP) 13%, var(--blancoP) 13%);
+    border-radius: 5%;
+    border: 2px solid black;
+    /* border-radius:45px 15px */
+
+}
+
+.quitar {
+    color: var(--blancoP);
+    background-size: contain;
+    margin-left: 10%;
+    margin-top: 4%;
+    font-weight: bolder;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-size: x-large;
+}
+
+.quitar:hover {
+    cursor: pointer;
+}
+
+
+/* ----------------------------PADDOCK--------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+.paddock {
+    position: absolute;
+    color: var(--blancoP);
+    margin-left: 40%;
+    margin-top: -6.5%;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.imgPaddock {
+    background-size: cover;
+    background-image: url("../imgs/paddock.jpg");
+    width: 325px;
+    height: 180px;
+    margin-left: 15.5%;
+    /* position:relative; */
+    justify-content: center;
+    justify-items: center;
+    margin-top: 5%;
+    border-radius: 50px;
+
+}
+
+.textoPaddock {
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.textoPaddock:hover {
+    cursor: default;
+}
+
+.reservarPaddock {
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+    margin-top: 5%;
+    margin-left: 25%;
+    width: 50%;
+    /* height: 15%; */
+    background-color: var(--rojoP);
+    color: var(--blancoP);
+    border-radius: 90px
+}
+
+.reservarPaddock:hover {
+    cursor: pointer;
 }

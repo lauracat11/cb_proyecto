@@ -78,7 +78,6 @@ form .row input::placeholder{
 }
 .wrapper form .pass{
   margin: -4px 0 20px 0;
-  line-height: 20px;
 }
 .wrapper form .pass a{
   color: rgb(255, 8, 1);;
