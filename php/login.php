@@ -34,7 +34,8 @@ if($count == 1) {
 }if($count == 2){
    header("location: /cb_proyecto/admin.html");
 }else {
-    echo "Your Login Name or Password is invalid";
+   $err = "<div class='alert alert-danger'>Correo o contraseña no validos</div>";
+   header("Location: ../login1.php?err=$err");
  }
 mysqli_close($conn);
 ?>

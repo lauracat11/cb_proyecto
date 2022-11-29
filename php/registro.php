@@ -17,11 +17,13 @@ $sql="INSERT INTO users (ID, nombre, apellidos, email, pswd) VALUES ('$id', '$un
 $consulta = "SELECT * FROM users WHERE email = '$uemail'";
 $res = mysqli_query($conn, $consulta);
 
+// global $err;
 $err = "";
-global $err;
+
+
 
 if (mysqli_num_rows($res)>0){
-    $err = "Usuario existente";
+    $err = "<div class='alert alert-danger'>El correo ya existe</div>";
     header("Location: ../registro1.php?err=$err");
 }else{
     $sql="INSERT INTO users (ID, nombre, apellidos, email, pswd) VALUES ('$id', '$uname', '$auname', '$uemail', '$pswd')";
