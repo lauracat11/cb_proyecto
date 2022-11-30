@@ -30,7 +30,7 @@ if ($admin_count == 1){
 }
 
 if($count == 1) {
-    header("location: /cb_proyecto//index.html");
+    header("location: /cb_proyecto/index.html");
     exit;
 }if($count == 2){
    header("location: /cb_proyecto/html/admin.html");
