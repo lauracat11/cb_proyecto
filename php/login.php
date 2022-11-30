@@ -30,7 +30,7 @@ if ($admin_count == 1){
 }
 
 if($count == 1) {
-    header("location: ../index.html");
+    header("location:../index.html");
 }if($count == 2){
    header("location: ../html/admin.html");
 }else {
