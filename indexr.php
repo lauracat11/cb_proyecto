@@ -53,7 +53,7 @@
                         </g>
                     </g>
                 </svg></div>
-            <form action="/cbp/php/registro.php" method="post">                  
+            <form action="/cb_proyecto/php/registro.php" method="post">                  
                 <div class="row">
                     <i class="fas fa-user"></i>
                     <input type="text" placeholder="Nom" name="uname" required>
@@ -78,7 +78,7 @@
                             echo $err; 
                         }
                     }
-                ?>     
+                ?>  
 
                 <div class="pass">
                     <label><input type="checkbox" value="first_checkbox" required> Soy mayor de 18 años y aceptro los <a href="#"><b>Terminos y Condiciones</b></a></label>

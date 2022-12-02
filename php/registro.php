@@ -9,7 +9,7 @@ $pswd = $_POST["pswd"];
 $id = uniqid();
 // Insertar datos en la base de datos
 
-$sql="INSERT INTO users (ID, nombre, apellidos, email, pswd) VALUES ('$id', '$uname', '$auname', '$uemail', '$pswd')";
+// $sql="INSERT INTO users (ID, nombre, apellidos, email, pswd) VALUES ('$id', '$uname', '$auname', '$uemail', '$pswd')";
 
 // Hace una consulta y mira si existe el correo que se a introducido en el registro.
 // $consulta = mysqli_query($conn, "SELECT * FROM users WHERE email = '$uemail'");
@@ -23,7 +23,7 @@ $err = "";
 
 
 if (mysqli_num_rows($res)>0){
-    $err = "<div class='alert alert-danger'>El correo ya existe</div>";
+    $err = "<div id='delete'>El correo ya existe</div>";
     header("Location: ../indexr.php?err=$err");
 }else{
     $sql="INSERT INTO users (ID, nombre, apellidos, email, pswd) VALUES ('$id', '$uname', '$auname', '$uemail', '$pswd')";

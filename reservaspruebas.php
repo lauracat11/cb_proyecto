@@ -16,13 +16,13 @@
     <nav class="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="img/logo.jpg" alt="Logo" width="292" height="100" class="logo d-inline-block">
+            <img src="imgs/logo.jpg" alt="Logo" width="292" height="100" class="logo d-inline-block">
           </a>
         </div>
       </nav>
 
     <h1>Formulario Reserva</h1>
-    <form action="../php/reserva.php" method="post">
+    <form action="php/reservas.php" method="post">
         <label for="">ESPACIO PARA ALQUILAR</label>
         <select name="e">
             <option value="Paddock" selected>Paddock</option>
