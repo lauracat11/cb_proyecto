@@ -1,0 +1,10 @@
+.logo {
+    float: left;
+    margin: 0;
+    margin-left: -12px;
+    margin-top: -13px;
+}
+.navbar{
+    height: 100px;
+    background: #000;
+}

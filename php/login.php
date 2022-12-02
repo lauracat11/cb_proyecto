@@ -2,15 +2,12 @@
 require ('header.php');
 session_start(); // Empezamos 
 
-$correo_admin = "admin@circuitcat.com";
-
 $uemail = $_POST["uemail"];
 $pswd = $_POST["pswd"];
 
-$sql = "SELECT * FROM users WHERE email='$uemail' and pswd='$pswd'";
-$result = mysqli_query($conn,$sql);
+$sql = "SELECT * FROM users WHERE pswd='$pswd' AND email='$uemail'";
+$result = mysqli_query($conn, $sql);
 $count = mysqli_num_rows($result);
-
 
 // Validación que nos indica si hay o no resgistros en la tabla
 // if (mysqli_num_rows($result) > 0) {
@@ -30,12 +27,13 @@ if ($admin_count == 1){
 }
 
 if($count == 1) {
-    header("location: /cb_proyecto/index.html");
+  header("location: /cb_proyecto/html/index.html");
+  exit;
 }if($count == 2){
-   header("location: /cb_proyecto/admin.html");
+  header("location: /cb_proyecto/admin.html");
 }else {
-   $err = "<div class='alert alert-danger'>Correo o contraseña no validos</div>";
-   header("Location: ../login1.php?err=$err");
- }
+  $err = "<div id='alerta'>Correo o contraseña no validos</div>";
+  header("Location: ../login1.php?err=$err");
+}
 mysqli_close($conn);
 ?>

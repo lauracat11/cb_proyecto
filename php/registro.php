@@ -23,7 +23,7 @@ $err = "";
 
 
 if (mysqli_num_rows($res)>0){
-    $err = "<div class='alert alert-danger'>El correo ya existe</div>";
+    $err = "<div id='alert'>El correo ya existe</div>";
     header("Location: ../registro1.php?err=$err");
 }else{
     $sql="INSERT INTO users (ID, nombre, apellidos, email, pswd) VALUES ('$id', '$uname', '$auname', '$uemail', '$pswd')";
