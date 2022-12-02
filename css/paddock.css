@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,700,700i,900,900i');
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--rojoP);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--rojoP);
+}
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+
+}
+
+:root {
+    --rojoP: rgb(235, 8, 1);
+    --negroP: rgb(0, 0, 0);
+    --blancoP: rgb(255, 255, 255);
+    --grismenu1: rgb(246, 246, 246);
+    --grismenu1: rgb(243, 243, 243);
+    --grisLetras: rgb(153, 153, 153);
+
+}
+
+body {
+    color: var(--negroP);
+    background-color: var(--grismenu1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.barra_de_arriba {
+    background-color: var(--negroP);
+    width: 100%;
+    height: 10%;
+    padding: 0%;
+}
+
+.barra_de_abajo {
+    background-color: var(--blancoP);
+    margin-top: 1%;
+    margin-left: 5%;
+    width: fit-content;
+    height: 10%;
+    padding: 0%;
+}
+
+.img_logo {
+    background-image: url("../imgs/logo.jpg");
+    width: 39vh;
+    height: 11.6vh;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.letrasbarra {
+    background-color: var(--blancoP);
+    color: var(--grisLetras);
+    text-decoration: none;
+    font-size: 0.90rem;
+    font-weight: bolder;
+}
+
+.letrasbarra:hover {
+    background-color: var(--grismenu1);
+    color: var(--negroP);
+    text-decoration: none;
+    font-size: 0.90rem;
+    font-weight: bolder;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+.reservas_button {
+    background-color: var(--negroP);
+    color: var(--blancoP);
+    margin-top: 40%;
+    /* margin-left: 10%; */
+    text-decoration: none;
+    font-size: 0.65rem;
+    font-weight: bolder;
+}
+
+.reservas_button:hover {
+    background-color: var(--rojoP);
+    text-decoration: none;
+}
+
+
+
+
+
+.box{
+    width: 65%;
+    height: 460px;
+    margin-left: 1%;
+    margin-top:1%;
+    background-color: var(--blancoP);
+}
+.title_box{
+    width: 100%;
+    height: 10%;
+    background-color: var(--rojoP);
+    color: var(--blancoP);
+    text-align: center;
+    padding-bottom: 1%;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.texto1{
+    text-align: center;
+    padding-top:1%;
+    font-size: 1.2rem;
+}
+.fecha{
+    margin-top: 5%;
+    margin-left: 60%;
+}
+.calendario{
+    margin-top: 1%;
+    border: 2px solid var(--rojoP);
+    border-radius: 90px;
+    text-align: center;
+    font-weight: bolder;
+
+}

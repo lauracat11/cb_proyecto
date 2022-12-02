@@ -63,7 +63,7 @@ body {
         opacity: 0;
     }
 
-    95% {
+    90% {
         opacity: 0;
     }
 
@@ -87,6 +87,20 @@ body {
 .container-map img {
     display: block;
     transition: transform 2s;
+}
+
+.mapa_paddock {
+    position: relative;
+    transform-origin: 55% 55%;
+    transition: transform 2s, filter 3s ease-in-out;
+    transform: scale(7);
+}
+
+.mapa_paddock_back {
+    position: relative;
+    transform-origin: 55% 55%;
+    transition: transform 2s, filter 3s ease-in-out;
+    transform: scale(1);
 }
 
 .mapa_paddock {
@@ -238,7 +252,7 @@ li a {
     animation-name: fadeInOpacity2;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 }
 
 .poligon:hover {
@@ -258,7 +272,7 @@ li a {
     animation-name: fadeInOpacity2;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 }
 
 .poligon2:hover {
@@ -276,7 +290,7 @@ li a {
     animation-name: fadeInOpacity2;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 
 }
 
@@ -298,7 +312,7 @@ li a {
     animation-name: fadeInOpacity2;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 }
 
 .poligon4:hover {
@@ -318,7 +332,7 @@ li a {
     animation-name: fadeInOpacity2;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 }
 
 .poligon5:hover {
@@ -369,6 +383,7 @@ li a {
 
 .generarBoxes {
     position: absolute;
+    display:block;
     width: 475px;
     height: 450px;
     margin-left: 45%;
@@ -436,13 +451,18 @@ li a {
     text-align: center;
     font-weight: bolder;
     font-size: x-large;
-    margin-top: 5%;
-    margin-left: 25%;
-    width: 50%;
+    margin-bottom: 0%;
+    margin-left: 40%;
+    display:inline-block;
+
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 5px;
     /* height: 15%; */
     background-color: var(--rojoP);
     color: var(--blancoP);
-    border-radius: 90px
+    border-radius: 90px;
+    text-decoration: none;
 }
 
 .reservarPaddock:hover {
