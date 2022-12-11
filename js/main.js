@@ -15,33 +15,33 @@ console.log("mapazoom: " + mapazoom);
 
 
 flechaatras.addEventListener("click", function () {
-    if(mapazoom == 1){
+    if (mapazoom == 1) {
         mapazoom = 0;
         mapa.className = "mapa_paddock_back"
         console.log("mapazoom: " + mapazoom);
         marcador.remove();
         var poligono_back = document.createElement("div");
-        poligono_back.className="poligon";
+        poligono_back.className = "poligon";
         document.getElementById('body').appendChild(poligono_back);
-        poligono_back.id="poligono"
+        poligono_back.id = "poligono"
 
         var poligono2_back = document.createElement("div");
-        poligono2_back.className="poligon2";
+        poligono2_back.className = "poligon2";
         poligono_back.appendChild(poligono2_back);
 
         var poligono3_back = document.createElement("div");
-        poligono3_back.className="poligon3";
+        poligono3_back.className = "poligon3";
         poligono2_back.appendChild(poligono3_back);
 
         var poligono4_back = document.createElement("div");
-        poligono4_back.className="poligon4";
+        poligono4_back.className = "poligon4";
         document.getElementById('body').appendChild(poligono4_back);
-        poligono4_back.id="poligono4"
+        poligono4_back.id = "poligono4"
 
         var poligono5_back = document.createElement("div");
-        poligono5_back.className="poligon5";
+        poligono5_back.className = "poligon5";
         document.getElementById('body').appendChild(poligono5_back);
-        poligono5_back.id="poligono5"
+        poligono5_back.id = "poligono5"
 
 
 
@@ -58,8 +58,8 @@ flechaatras.addEventListener("click", function () {
             poligono_back.remove();
             poligono4_back.remove();
             poligono5_back.remove();
-            
-            
+
+
             marcador.id = "marcador";
             marcador.className = "marcador1";
             document.getElementById('body').appendChild(marcador);
@@ -88,7 +88,7 @@ flechaatras.addEventListener("click", function () {
                 reservar1.className = "reservarPaddock";
                 reservar1.innerHTML = "RESERVAR"
                 document.getElementById('generarBoxes').appendChild(reservar1);
-        
+
                 //ELIMINA RECUADRO DE RESERVA
                 text1.addEventListener("click", (event) => {
                     generarBoxes.className = ""
@@ -103,7 +103,7 @@ flechaatras.addEventListener("click", function () {
                     reservar1.innerHTML = ""
                 },
                 );
-        
+
             },
             );
         }
@@ -127,13 +127,14 @@ poligono.addEventListener("click", (event) => {
     poligono.remove();
     poligono2.remove();
     poligono3.remove();
-    
-    
+
+
     marcador.id = "marcador";
     marcador.className = "marcador1";
     document.getElementById('body').appendChild(marcador);
     marcador.addEventListener("click", (event) => {
         //GENERA CUADRO DE RESERVA
+        contador = -1
         console.log("generarboxesvaaqui");
         generarBoxes.id = "generarBoxes"
         generarBoxes.className = "generarBoxes";
@@ -158,8 +159,16 @@ poligono.addEventListener("click", (event) => {
         reservar1.innerHTML = "RESERVAR"
         document.getElementById('generarBoxes').appendChild(reservar1);
 
+
+        //CLICK EN RESERVAR
+        reservar1.addEventListener("click", (event) => {
+            console.log("A")
+            window.location="../html/paddock.html"
+        },);
+
         //ELIMINA RECUADRO DE RESERVA
         text1.addEventListener("click", (event) => {
+            contador=0;
             generarBoxes.className = ""
             text1.className = ""
             text2.className = ""
@@ -212,7 +221,15 @@ paddockscroll.addEventListener("click", (event) => {
         reservar1.className = "reservarPaddock";
         reservar1.innerHTML = "RESERVAR"
         document.getElementById('generarBoxes').appendChild(reservar1);
-        
+
+
+        //CLICK EN RESERVAR
+        reservar1.addEventListener("click", (event) => {
+            console.log("A")
+            window.location="../html/paddock.html"
+        },
+        );
+
         //ELIMINA RECUADRO DE RESERVA
         text1.addEventListener("click", (event) => {
             contador = 0
@@ -228,10 +245,12 @@ paddockscroll.addEventListener("click", (event) => {
             reservar1.innerHTML = ""
         },
         );
-        
+
     }
 },
 );
+
+
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
 //------------------------------PADDOCK----------------------------------------------
