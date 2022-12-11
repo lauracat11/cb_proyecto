@@ -345,11 +345,7 @@ button.ui-button::-moz-focus-inner {
     pointer-events: none;
 }
 
-.ui-datepicker {
-    width: 17em;
-    padding: .2em .2em 0;
-    display: none;
-}
+
 
 .ui-datepicker .ui-datepicker-header {
     position: relative;
@@ -411,12 +407,7 @@ button.ui-button::-moz-focus-inner {
     width: 45%;
 }
 
-.ui-datepicker table {
-    width: 100%;
-    font-size: .9em;
-    border-collapse: collapse;
-    margin: 0 0 .4em;
-}
+
 
 .ui-datepicker th {
     padding: .7em .3em;
@@ -2023,3 +2014,38 @@ a.ui-button:active,
     -webkit-box-shadow: -8px -8px 8px #333333;
     box-shadow: -8px -8px 8px #333333;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1330px) {
+.ui-datepicker {
+    width: 17em;
+    padding: .2em .2em 0;
+    display: none;
+}
+}
+@media (max-width: 1920px) {
+    .ui-datepicker table {
+        width: 100%;
+        height: 90%;
+        font-size: .9em;
+        border-collapse: collapse;
+        margin: 0 0 .4em;
+    }
+
+    .ui-datepicker {
+        width: 26em;
+        height: 23em;
+        padding: .2em .2em 0;
+        display: none;
+    }
+    }
