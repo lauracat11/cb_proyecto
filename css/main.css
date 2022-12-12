@@ -79,7 +79,7 @@ body {
 
 
 
-@media (max-width: 1330px) {
+@media screen and (max-width: 1280px) {
 
     /* -------------------MAPA------------------------- */
     /* ------------------------------------------------ */
@@ -440,12 +440,14 @@ body {
     }
 
     .reservarPaddock {
+        display: inline-block;
+
         text-align: center;
         font-weight: bolder;
         font-size: x-large;
         margin-top: 5%;
-        margin-left: 25%;
-        width: 50%;
+        margin-left: 40%;
+        width: fit-content;
         /* height: 15%; */
         background-color: var(--rojoP);
         color: var(--blancoP);
@@ -465,7 +467,6 @@ body {
 
 
 
-/*1920X1080*/
 
 
 
@@ -479,7 +480,8 @@ body {
 
 
 
-@media (max-width: 1920px) {
+
+@media (min-width: 1920px) {
 
     /* -------------------MAPA------------------------- */
     /* ------------------------------------------------ */
