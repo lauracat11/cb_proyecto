@@ -9,13 +9,13 @@ paddock1.addEventListener("click", (event) => {
     if (pd1selected == false) {
         pd1selected = true
         console.log("paddock1 "+ pd1selected)
-        paddock1.src = "../imgs/paddock1-2_selected.png"
+        paddock1.src = "../imgs/paddock1_selected.png"
     }
 
     else if (pd1selected == true) {
         pd1selected = false
         console.log("paddock1 "+ pd1selected)
-        paddock1.src = "../imgs/paddock1-2.png"
+        paddock1.src = "../imgs/paddock1.png"
 
     }
 },);
@@ -26,13 +26,13 @@ paddock2.addEventListener("click", (event) => {
     if (pd2selected == false) {
         pd2selected = true
         console.log("paddock2 "+ pd2selected)
-        paddock2.src = "../imgs/paddock1-2_selected.png"
+        paddock2.src = "../imgs/paddock2_selected.png"
     }
 
     else if (pd2selected == true) {
         pd2selected = false
         console.log("paddock2 "+ pd2selected)
-        paddock2.src = "../imgs/paddock1-2.png"
+        paddock2.src = "../imgs/paddock2.png"
 
     }
 },);

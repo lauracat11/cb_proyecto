@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circuit de Catalunya</title>
-    <link rel="stylesheet" href="/css/paddock.css">
-
-    <link rel="stylesheet" href="/css/calendario.css">
-
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <script src="../js/pickdate.js"></script>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Circuit de Catalunya</title>
+        <link rel="stylesheet" href="/css/paddock.css">
+        <link rel="stylesheet" href="/css/calendario.css">
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script src="../js/pickdate.js"></script>
 </head>
 
-<body>
+<body id="body">
     <div class="block">
         <nav class="barra_de_arriba">
             <ul>
@@ -23,10 +22,10 @@
                 <li><a href="../html/alquilar.html" class="reservas_button">LLOGAR</a></li>
             </ul>
         </nav>
-
+        
         <div class="box">
             <div class="title_box">
-                <h1>PADDOK</h1>
+                <h1>PADDOC</h1>
             </div>
             <div class="texto1">
                 Gaudeixi d’un espai a l’aire lliure al marc incomparable del traçat del <br>
@@ -41,17 +40,25 @@
             <div class="texto2">
                 Calendario:
             </div>
-            <p class="fecha"> <br>
-                <input type="text" id="datepicker" class="calendario" required autofocus>
+            <p class="fecha" id="datepicker"> <br>
+                <input type="text"  class="calendario" required autofocus>
             </p>
-            <img src="../imgs/paddock1-2.png" class="paddock1" id="paddock1">
-            <img src="../imgs/paddock1-2.png" class="paddock2" id="paddock2">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <img src="../imgs/paddock1.png" class="paddock1" id="paddock1">
+            <img src="../imgs/paddock2.png" class="paddock2" id="paddock2">
             <img src="../imgs/paddock3.png" class="paddock3" id="paddock3">
-
             <div class="text3">
                 FES CLIC PER SELECCIONAR UNA O MES PARTS DEL PADOC
             </div>
-            <a class="botonreservar" href="../html/admin.html">LLOGAR</a>
+            <a class="botonreservar" href="../html/admin.html">SOL·LICITAR</a>
             
         </div>
         <div class="inblock">
@@ -59,8 +66,7 @@
             <img src="../imgs/imgpd2.png" class="imgpd2">
         </div>
     </div>
-
+    
     <script src="../js/selectpaddock.js"></script>
 </body>
-
 </html>

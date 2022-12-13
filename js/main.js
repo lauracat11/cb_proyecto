@@ -129,7 +129,7 @@ function generarPaddockReserva() {
         document.getElementById('generarBoxes').appendChild(text1);
         let text2 = document.createElement("div");
         text2.className = "paddock";
-        text2.innerHTML = "PADDOCK";
+        text2.innerHTML = "PADDOC";
         document.getElementById('generarBoxes').appendChild(text2);
         let img = document.createElement("div");
         img.className = "imgPaddock";

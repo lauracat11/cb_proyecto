@@ -232,6 +232,7 @@ body {
         background-color: var(--rojoP);
         color: var(--blancoP);
         border-radius: 90px;
+        text-decoration: none;
     }
 
     .botonreservar:hover {
@@ -256,21 +257,6 @@ body {
         width: 50px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 1920px) {
 
 
@@ -292,11 +278,11 @@ body {
 
     .img_logo {
         background-image: url("../imgs/logo.jpg");
-        width: 39vh;
-        height: 11.6vh;
+        width: 37vh;
+        height: 11.7vh;
         display: flex;
         justify-content: center;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
@@ -367,7 +353,7 @@ body {
         background-color: var(--rojoP);
         color: var(--blancoP);
         text-align: center;
-        padding-bottom: 1%;
+        padding-top: 1%;
         font-size: 1.5rem;
         font-weight: bolder;
     }
@@ -436,13 +422,14 @@ body {
         font-weight: bolder;
         font-size: x-large;
         margin-top: 5%;
-        margin-left: 25%;
+        margin-left: 20%;
         /* width:100px; */
         padding: 0.6%;
         /* height: 15%; */
         background-color: var(--rojoP);
         color: var(--blancoP);
         border-radius: 90px;
+        text-decoration: none;
     }
 
     .botonreservar:hover {

@@ -403,6 +403,7 @@ button.ui-button::-moz-focus-inner {
 }
 
 .ui-datepicker select.ui-datepicker-month,
+
 .ui-datepicker select.ui-datepicker-year {
     width: 45%;
 }
@@ -1047,7 +1048,7 @@ body .ui-tooltip {
 
 .ui-widget-header {
     border: 1px solid #f70000;
-    background: #cc0000 url("images/ui-bg_highlight-soft_15_cc000png0_1x100.") 50% 50% repeat-x;
+    background: #cc0000  50% 50% repeat-x;
     color: #ffffff;
     font-weight: bold;
 }
@@ -1062,13 +1063,15 @@ body .ui-tooltip {
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
 .ui-button,
-
+.ui-state-default{
+    text-align: center;
+}
 /* We use html here because we need a greater specificity to make sure disabled
 works properly when clicked or hovered */
 html .ui-button.ui-state-disabled:hover,
 html .ui-button.ui-state-disabled:active {
     border: 1px solid #ffffff;
-    background: #ffffff url("images/ui-bg_highlight-hard_100_eeeeee_1x100.png") 50% 50% repeat-x;
+    background: #ffffff;
     font-weight: bold;
     color: #000000;
 }
@@ -1093,7 +1096,7 @@ a:visited.ui-button,
 .ui-button:hover,
 .ui-button:focus {
     border: 1px solid #cdd5da;
-    background: #f6f6f6 url("images/ui-bg_highlight-hard_100_f6f6f6_1x100.png") 50% 50% repeat-x;
+    background: #ffffff;
     font-weight: bold;
     color: #111111;
 }
@@ -1149,7 +1152,7 @@ a.ui-button:active,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
     border: 1px solid #ffffff;
-    background: #ffffff url("images/ui-bg_glass_55_fbf8ee_1x400.png") 50% 50% repeat-x;
+    background: #ffffff;
     color: #ff0000;
 }
 
@@ -1224,23 +1227,22 @@ a.ui-button:active,
 
 .ui-icon,
 .ui-widget-content .ui-icon {
-    background-image: url("../imgs/flechaatras.png");
+    background-image: url("../imgs/izq.png");
     background-repeat: no-repeat;
 }
 
 .ui-widget-header .ui-icon {
-    background-image: url("../imgs/izq.png");
-    background-repeat: no-repeat;
-
+    /* background-image: url("../imgs/izq.png"); */
+    /* background: url("../imgs/izq.png") 100% no-repeat;
+    background-size: 50px;
+    background-position: 40%; */
 }
 
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon,
 .ui-button:hover .ui-icon,
 .ui-button:focus .ui-icon {
-    background-image: url("../imgs/izq.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+
 
 }
 
@@ -1875,8 +1877,11 @@ a.ui-button:active,
 }
 
 .ui-icon-circle-triangle-e {
-    background-position: -48px -192px;
-    background-size: contain;
+    background: url("../imgs/izq.png") 100% no-repeat;
+    background-size: 65px;
+    background-position: 50%;
+    transform: rotate(180deg);
+
 }
 
 .ui-icon-circle-triangle-s {
@@ -1886,7 +1891,9 @@ a.ui-button:active,
 }
 
 .ui-icon-circle-triangle-w {
-    background-position: -80px -192px;
+    background: url("../imgs/izq.png") 100% no-repeat;
+    background-size: 65px;
+    background-position: 50%;
 }
 
 .ui-icon-circle-triangle-n {

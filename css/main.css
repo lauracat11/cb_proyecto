@@ -199,6 +199,8 @@ body {
         text-decoration: none;
         font-size: 0.65rem;
         font-weight: bolder;
+        text-decoration: none;
+
     }
 
     .reservas_button:hover {
@@ -332,8 +334,6 @@ body {
         cursor: pointer;
     }
 
-    .poligon6 {}
-
     .poligonoeliminado {
         width: 0px;
         height: 0px;
@@ -356,6 +356,7 @@ body {
         margin-left: 65%;
         margin-top: -30%;
         background-image: url("../imgs/marcador.png");
+        background-repeat: no-repeat;
         animation-name: fadeInOpacity;
         animation-iteration-count: 1;
         animation-timing-function: ease-in;
@@ -447,11 +448,14 @@ body {
         font-size: x-large;
         margin-top: 5%;
         margin-left: 40%;
-        width: fit-content;
+        width:fit-content;
+        padding: 5px;
         /* height: 15%; */
         background-color: var(--rojoP);
         color: var(--blancoP);
-        border-radius: 90px
+        border-radius: 90px;
+        text-decoration: none;
+
     }
 
     .reservarPaddock:hover {
@@ -576,11 +580,11 @@ body {
 
     .img_logo {
         background-image: url("../imgs/logo.jpg");
-        width: 39vh;
-        height: 11.6vh;
+        width: 37vh;
+        height: 11.7vh;
         display: flex;
         justify-content: center;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
@@ -608,6 +612,7 @@ body {
         text-decoration: none;
         font-size: 0.65rem;
         font-weight: bolder;
+        text-decoration: none;
     }
 
     .reservas_button:hover {
@@ -763,8 +768,9 @@ body {
         width: 60px;
         height: 60px;
         margin-left: 65%;
-        margin-top: -30%;
+        margin-top: -32%;
         background-image: url("../imgs/marcador.png");
+        background-repeat: no-repeat;
         animation-name: fadeInOpacity;
         animation-iteration-count: 1;
         animation-timing-function: ease-in;
@@ -858,12 +864,14 @@ body {
         font-size: x-large;
         margin-top: 20px;
         margin-left: 45%;
-        /* width:100px; */
-        padding: 0.6%;
+        width: fit-content;
+        padding: 5px;
         /* height: 15%; */
         background-color: var(--rojoP);
         color: var(--blancoP);
-        border-radius: 90px
+        border-radius: 90px;
+        text-decoration: none;
+
     }
 
     .reservarPaddock:hover {
