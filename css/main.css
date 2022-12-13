@@ -581,7 +581,7 @@ body {
     .img_logo {
         background-image: url("../imgs/logo.jpg");
         width: 37vh;
-        height: 11.7vh;
+        height: 10.7vh;
         display: flex;
         justify-content: center;
         background-size: cover;
@@ -623,7 +623,7 @@ body {
     .scrollable {
         background-color: var(--grismenu1);
         width: 25%;
-        height: 82.4vh;
+        height: 83.3vh;
         overflow-x: hidden;
         overflow-y: auto;
         padding: 20px;
