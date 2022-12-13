@@ -503,7 +503,7 @@ body {
 
 
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1450px) and (max-width: 1918px){
 
     /* -------------------MAPA------------------------- */
     /* ------------------------------------------------ */
@@ -517,7 +517,7 @@ body {
     .container-map img {
         display: block;
         transition: transform 2s;
-        width:72.3vw;
+        width:70.3vw;
         height:86.3vh;
     }
 
@@ -1091,7 +1091,7 @@ body {
         width: 100px;
         height: 47px;
         margin-left: 64.3%;
-        margin-top: -21.5%;
+        margin-top: -21.7%;
         animation-name: fadeInOpacity2;
         animation-iteration-count: 1;
         animation-timing-function: ease-in;
