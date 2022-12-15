@@ -298,8 +298,8 @@ body {
     }
 
     .letrasbarra {
-        background-color: var(--rojoP);
-        color: var(--grisLetras);
+        background-color: var(--blancoP);
+        color: var(--rojoP);
         text-decoration: none;
         font-size: 4.90rem;
         font-weight: bolder;
