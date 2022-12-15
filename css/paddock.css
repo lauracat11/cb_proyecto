@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,700,700i,900,900i');
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--rojoP);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--rojoP);
+}
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+
+}
+
+:root {
+    --rojoP: rgb(235, 8, 1);
+    --negroP: rgb(0, 0, 0);
+    --blancoP: rgb(255, 255, 255);
+    --grismenu1: rgb(246, 246, 246);
+    --grismenu1: rgb(243, 243, 243);
+    --grisLetras: rgb(153, 153, 153);
+
+}
+
+body {
+    color: var(--negroP);
+    background-color: var(--grismenu1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+
+
+    .barra_de_arriba {
+        background-color: var(--negroP);
+        width: 100%;
+        height: 10%;
+        padding: 0%;
+    }
+
+    .barra_de_abajo {
+        background-color: var(--blancoP);
+        margin-top: 1%;
+        margin-left: 5%;
+        width: fit-content;
+        height: 10%;
+        padding: 0%;
+    }
+
+    .img_logo {
+        background-image: url("../imgs/logo.jpg");
+        width: 39vh;
+        height: 11.6vh;
+        display: flex;
+        justify-content: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .letrasbarra {
+        background-color: var(--blancoP);
+        color: var(--grisLetras);
+        text-decoration: none;
+        font-size: 0.90rem;
+        font-weight: bolder;
+    }
+
+    .letrasbarra:hover {
+        background-color: var(--grismenu1);
+        color: var(--negroP);
+        text-decoration: none;
+        font-size: 0.90rem;
+        font-weight: bolder;
+    }
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        padding: 8px;
+        background-color: #dddddd;
+    }
+
+    .reservas_button {
+        background-color: var(--negroP);
+        color: var(--blancoP);
+        margin-top: 40%;
+        /* margin-left: 10%; */
+        text-decoration: none;
+        font-size: 0.65rem;
+        font-weight: bolder;
+    }
+
+    .reservas_button:hover {
+        background-color: var(--rojoP);
+        text-decoration: none;
+    }
+
+
+
+
+
+    .box {
+        width: 65%;
+        height: 430px;
+        margin-left: 1%;
+        margin-top: 1%;
+        background-color: var(--blancoP);
+    }
+
+    .title_box {
+        width: 100%;
+        height: 10%;
+        background-color: var(--rojoP);
+        color: var(--blancoP);
+        text-align: center;
+        padding-bottom: 1%;
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+
+    .texto1 {
+        text-align: center;
+        padding-top: 1%;
+        font-size: 1.2rem;
+    }
+
+    .fecha {
+        margin-top: 5%;
+        margin-left: 60%;
+    }
+
+    .texto2 {
+        display: flex;
+        font-weight: bold;
+        color: var(--rojoP);
+        margin-left: 63%;
+        margin-top: -6%;
+    }
+
+    .calendario {
+        display: flex;
+        margin-top: -19%;
+        margin-left: 5%;
+        border: 2px solid var(--rojoP);
+        border-radius: 90px;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .warning-img {
+        margin-top: 1%;
+        margin-left: 5%;
+        width: 55%;
+    }
+
+    .warning-text {
+        font-weight: bolder;
+        margin-left: 14%;
+        font-size: medium;
+        margin-top: -7%;
+    }
+
+
+    .paddock1 {
+        width: 15%;
+        margin-left: 10%;
+        margin-top: 1%;
+    }
+
+    .paddock2 {
+        width: 15%;
+
+    }
+
+    .paddock3 {
+        width: 15%;
+
+    }
+
+    .paddock1:hover {
+        cursor: pointer;
+    }
+
+    .paddock2:hover {
+        cursor: pointer;
+    }
+
+    .paddock3:hover {
+        cursor: pointer;
+    }
+
+    .text3 {
+        margin-left: 5%;
+        margin-top: 2%;
+        font-weight: bold;
+    }
+
+    .botonreservar {
+        display: inline-block;
+        text-align: center;
+        font-weight: bolder;
+        font-size: x-large;
+        margin-top: 1%;
+        margin-left: 25%;
+        /* width:100px; */
+        padding: 0.6%;
+        /* height: 15%; */
+        background-color: var(--rojoP);
+        color: var(--blancoP);
+        border-radius: 90px;
+        text-decoration: none;
+    }
+
+    .botonreservar:hover {
+        cursor: pointer;
+    }
+
+    .imgpd1 {
+        margin-left: 90%;
+        margin-top: 110%;
+        width: 320px;
+    }
+
+    .imgpd2 {
+        margin-left: 90%;
+        margin-top: 1%;
+        width: 320px;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .inblock {
+        margin-left: 67%;
+        margin-top: -38%;
+        width: 50px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .barra_de_arriba {
+        background-color: var(--negroP);
+        width: 100%;
+        height: 10%;
+        padding: 0%;
+    }
+
+    .barra_de_abajo {
+        background-color: var(--blancoP);
+        margin-top: 1%;
+        margin-left: 5%;
+        width: fit-content;
+        height: 10%;
+        padding: 0%;
+    }
+
+    .img_logo {
+        background-image: url("../imgs/logo.jpg");
+        width: 37vh;
+        height: 11.7vh;
+        display: flex;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .letrasbarra {
+        background-color: var(--blancoP);
+        color: var(--grisLetras);
+        text-decoration: none;
+        font-size: 0.90rem;
+        font-weight: bolder;
+    }
+
+    .letrasbarra:hover {
+        background-color: var(--grismenu1);
+        color: var(--negroP);
+        text-decoration: none;
+        font-size: 0.90rem;
+        font-weight: bolder;
+    }
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        padding: 8px;
+        background-color: #dddddd;
+    }
+
+    .reservas_button {
+        background-color: var(--negroP);
+        color: var(--blancoP);
+        margin-top: 40%;
+        /* margin-left: 10%; */
+        text-decoration: none;
+        font-size: 0.65rem;
+        font-weight: bolder;
+    }
+
+    .reservas_button:hover {
+        background-color: var(--rojoP);
+        text-decoration: none;
+    }
+
+
+
+
+
+    .box {
+        width: 65%;
+        height: 770px;
+        margin-left: 1%;
+        margin-top: 1%;
+        background-color: var(--blancoP);
+    }
+
+    .title_box {
+        width: 100%;
+        height: 10%;
+        background-color: var(--rojoP);
+        color: var(--blancoP);
+        text-align: center;
+        padding-top: 1%;
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+
+    .texto1 {
+        text-align: center;
+        padding-top: 1%;
+        font-size: 2.0rem;
+    }
+
+    .fecha {
+        margin-top: 5%;
+        margin-left: 60%;
+    }
+
+    .texto2 {
+        display: flex;
+        font-weight: bold;
+        color: var(--rojoP);
+        margin-left: 61%;
+        margin-top: -2%;
+    }
+
+    .calendario {
+        display: flex;
+        margin-top: -15%;
+        border: 2px solid var(--rojoP);
+        border-radius: 90px;
+        text-align: center;
+        font-weight: bolder;
+        width: fit-content;
+    }
+
+    .warning-img {
+        margin-top: 3%;
+        margin-left: 5%;
+    }
+
+    .warning-text {
+        font-weight: bolder;
+        margin-left: 12%;
+        font-size: large;
+        margin-top: -5.5%;
+        width: fit-content;
+    }
+
+    .paddock1 {
+        margin-left: 5%;
+    }
+
+    .paddock1:hover {
+        cursor: pointer;
+    }
+
+    .paddock2:hover {
+        cursor: pointer;
+    }
+
+    .paddock3:hover {
+        cursor: pointer;
+    }
+
+    .text3 {
+        margin-left: 5%;
+        margin-top: 2%;
+        font-weight: bold;
+    }
+
+    .botonreservar {
+        display: inline-block;
+        text-align: center;
+        font-weight: bolder;
+        font-size: x-large;
+        margin-top: 5%;
+        margin-left: 20%;
+        /* width:100px; */
+        padding: 0.6%;
+        /* height: 15%; */
+        background-color: var(--rojoP);
+        color: var(--blancoP);
+        border-radius: 90px;
+        text-decoration: none;
+    }
+
+    .botonreservar:hover {
+        cursor: pointer;
+    }
+
+    .imgpd1 {
+        margin-left: 69%;
+        margin-top: -50%;
+
+    }
+
+    .imgpd2 {
+        margin-left: 69%;
+        margin-top: 1%;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .inblock {
+        margin-left: 67%;
+        margin-top: -38%;
+        width: 50px;
+    }
+}
