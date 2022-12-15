@@ -30,9 +30,10 @@ if ($admin_count == 1){
 }
 
 if($count == 1) {
-    header("location: ../index.html");
+    header("location: /cb_proyecto/index.html");
+    exit;
 }if($count == 2){
-   header("location: ../html/admin.html");
+   header("location: /cb_proyecto/html/admin.html");
 }else {
    $err = "<div class='alert alert-danger'>Correo o contraseña no validos</div>";
    header("Location: ../indexl.php?err=$err");
