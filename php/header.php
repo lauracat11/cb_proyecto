@@ -10,7 +10,7 @@ $conn = mysqli_connect($servername, $username, $password, $db_name);
 // Validación de la conexión
 if (!$conn){
     echo "Conexión fallida en: " . mysqli_connect_error($conn);
-}else{
-    echo "Conexión con exito 😎 <br>";
-}
+}//else{
+//     echo "Conexión con exito 😎 <br>";
+// }
 ?>
