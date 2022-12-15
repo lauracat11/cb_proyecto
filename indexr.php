@@ -7,6 +7,7 @@
     <title>Register Form | Responsive</title>
     <link rel="stylesheet" href="css/registro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    
     <link rel="icon" type="image/x-icon" href="imgs/favicon/favicon-96x96.png">
 </head>
 <body>
