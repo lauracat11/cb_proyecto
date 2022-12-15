@@ -79,7 +79,7 @@
                             echo $err; 
                         }
                     }
-                ?>     
+                ?>  
 
                 <div class="pass">
                     <label><input type="checkbox" value="first_checkbox" required> Soy mayor de 18 años y aceptro los <a href="#"><b>Terminos y Condiciones</b></a></label>
