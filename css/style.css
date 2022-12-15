@@ -137,3 +137,92 @@ li a {
 .fotosscroll:hover {
     cursor: pointer;
 }
+
+
+/* ADMIN */
+
+.navbar{
+    background-color: black;
+}
+.sidebar{
+    background-color: black;
+}
+.aside{
+    background-color: black;
+}
+.main-sidebar{
+    background-color: black;
+}
+.logo-bg{
+    background-color: rgb(230, 0, 23);
+}
+.boton-cerrar-s{
+    background-color: rgb(230, 0, 23);
+}
+.cajas-info{
+    background-color: rgb(230, 0, 23);
+    color: white;
+}
+.lineaB{
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+.boton-rojo{
+    background-color: rgb(230, 0, 23);
+    color: #FFFFFF;
+}
+.boton-rojo:hover{
+    background-color: rgb(179, 0, 18);
+    color: #FFFFFF;
+}
+.fc-timeGridWeek-button{
+    background-color: rgb(230, 0, 23);
+    color: #FFFFFF;
+}
+.fc-timeGridWeek-button:hover{
+    background-color: rgb(179, 0, 18);
+    color: #FFFFFF;
+}
+.fc-dayGridMonth-button{
+    background-color: rgb(230, 0, 23);
+    color: #FFFFFF;
+}
+.fc-dayGridMonth-button:hover{
+    background-color: rgb(179, 0, 18);
+    color: #FFFFFF;
+}
+.fc-timeGridDay-button{
+    background-color: rgb(230, 0, 23);
+    color: #FFFFFF;
+}
+.fc-timeGridDay-button:hover{
+    background-color: rgb(179, 0, 18);
+    color: #FFFFFF;
+}
+.fc-prev-button{
+    background-color: rgb(230, 0, 23);
+    color: #FFFFFF;
+}
+.fc-prev-button:hover{
+    background-color: rgb(179, 0, 18);
+    color: #FFFFFF;
+}
+.fc-next-button{
+    background-color: rgb(230, 0, 23);
+    color: #FFFFFF;
+}
+.fc-next-button:hover{
+    background-color: rgb(179, 0, 18);
+    color: #FFFFFF;
+}
+.fc-today-button{
+    background-color: rgb(230, 0, 23);
+    color: #FFFFFF;
+}
+.fc-today-button:hover{
+    background-color: rgb(179, 0, 18);
+    color: #FFFFFF;
+}
+.mamon{
+    position:fixed;
+}
