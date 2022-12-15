@@ -269,6 +269,7 @@ body {
     }
 }
 
+
 @media screen and (min-width: 1450px) and (max-width: 1918px){
     .barra_de_arriba {
         background-color: var(--negroP);
@@ -316,7 +317,7 @@ body {
     ul {
         list-style-type: none;
         margin: 0;
-        padding: 0;
+        padding: 0.1;
         overflow: hidden;
     }
 
@@ -473,6 +474,8 @@ body {
         width: 50px;
     }
 }
+
+
 
 
 @media (min-width: 1920px) {
