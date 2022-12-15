@@ -301,7 +301,7 @@ body {
         background-color: var(--blancoP);
         color: var(--grisLetras);
         text-decoration: none;
-        font-size: 0.90rem;
+        font-size: 4.90rem;
         font-weight: bolder;
     }
 
@@ -405,9 +405,9 @@ body {
 
     .warning-text {
         font-weight: bolder;
-        margin-left: 12%;
+        margin-left: 13%;
         font-size: large;
-        margin-top: -5.5%;
+        margin-top: -6.8%;
         width: fit-content;
     }
 
@@ -454,14 +454,16 @@ body {
     }
 
     .imgpd1 {
-        margin-left: 69%;
-        margin-top: -50%;
+        width: 500px;
+        margin-left: 9%;
+        margin-top: -20px;
 
     }
 
     .imgpd2 {
-        margin-left: 69%;
-        margin-top: 1%;
+        width: 500px;
+        margin-left: 9%;
+        margin-top: 10%;
     }
 
     .block {
@@ -470,7 +472,7 @@ body {
 
     .inblock {
         margin-left: 67%;
-        margin-top: -38%;
+        margin-top: -48%;
         width: 50px;
     }
 }

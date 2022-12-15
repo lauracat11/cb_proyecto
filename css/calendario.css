@@ -2049,7 +2049,22 @@ a.ui-button:active,
         margin: 0 0 .4em;
     }
 }
+@media screen and (min-width: 1450px) and (max-width: 1918px) {
+    .ui-datepicker table {
+        width: 100%;
+        height: 90%;
+        font-size: .9em;
+        border-collapse: collapse;
+        margin: 0 0 .4em;
+    }
 
+    .ui-datepicker {
+        width: 20em;
+        height: 23em;
+        padding: .2em .2em 0;
+        display: none;
+    }
+}
 @media (min-width: 1920px) {
     .ui-datepicker table {
         width: 100%;
