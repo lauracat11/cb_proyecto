@@ -6,7 +6,7 @@
   font-family: 'Poppins',sans-serif;
 }
 body{
-  background-image: url("../img/bg.jpg");
+  background-image: url("../imgs/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -110,4 +110,12 @@ form .button input:hover{
 }
 form .signup-link a:hover{
   text-decoration: underline;
+}
+
+#delete{
+  padding: 10px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+  border-radius: 5px;
 }
