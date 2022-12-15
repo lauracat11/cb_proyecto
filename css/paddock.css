@@ -159,7 +159,8 @@ body {
         margin-top: 5%;
         margin-left: 60%;
     }
-    .texto2{
+
+    .texto2 {
         display: flex;
         font-weight: bold;
         color: var(--rojoP);
@@ -190,35 +191,41 @@ body {
         margin-top: -7%;
     }
 
-    
-    .paddock1{
+
+    .paddock1 {
         width: 15%;
         margin-left: 10%;
         margin-top: 1%;
     }
-    .paddock2{
+
+    .paddock2 {
         width: 15%;
 
     }
-    .paddock3{
+
+    .paddock3 {
         width: 15%;
 
     }
-    .paddock1:hover{
-        cursor: pointer;
-    }
-    .paddock2:hover{
-        cursor: pointer;
-    }
-    .paddock3:hover{
+
+    .paddock1:hover {
         cursor: pointer;
     }
 
-    .text3{
+    .paddock2:hover {
+        cursor: pointer;
+    }
+
+    .paddock3:hover {
+        cursor: pointer;
+    }
+
+    .text3 {
         margin-left: 5%;
         margin-top: 2%;
         font-weight: bold;
     }
+
     .botonreservar {
         display: inline-block;
         text-align: center;
@@ -238,28 +245,31 @@ body {
     .botonreservar:hover {
         cursor: pointer;
     }
-    .imgpd1{
-        margin-left:90%;
+
+    .imgpd1 {
+        margin-left: 90%;
         margin-top: 110%;
         width: 320px;
     }
-    .imgpd2{
-        margin-left:90%;
+
+    .imgpd2 {
+        margin-left: 90%;
         margin-top: 1%;
         width: 320px;
     }
-    .block{
+
+    .block {
         display: block;
     }
-    .inblock{
+
+    .inblock {
         margin-left: 67%;
-        margin-top:-38%;
+        margin-top: -38%;
         width: 50px;
     }
 }
+
 @media (min-width: 1920px) {
-
-
     .barra_de_arriba {
         background-color: var(--negroP);
         width: 100%;
@@ -367,8 +377,9 @@ body {
     .fecha {
         margin-top: 5%;
         margin-left: 60%;
-    }    
-    .texto2{
+    }
+
+    .texto2 {
         display: flex;
         font-weight: bold;
         color: var(--rojoP);
@@ -398,24 +409,29 @@ body {
         margin-top: -5.5%;
         width: fit-content;
     }
-    .paddock1{
+
+    .paddock1 {
         margin-left: 5%;
     }
-    .paddock1:hover{
-        cursor: pointer;
-    }
-    .paddock2:hover{
-        cursor: pointer;
-    }
-    .paddock3:hover{
+
+    .paddock1:hover {
         cursor: pointer;
     }
 
-    .text3{
+    .paddock2:hover {
+        cursor: pointer;
+    }
+
+    .paddock3:hover {
+        cursor: pointer;
+    }
+
+    .text3 {
         margin-left: 5%;
         margin-top: 2%;
         font-weight: bold;
     }
+
     .botonreservar {
         display: inline-block;
         text-align: center;
@@ -435,21 +451,25 @@ body {
     .botonreservar:hover {
         cursor: pointer;
     }
-    .imgpd1{
-        margin-left:69%;
+
+    .imgpd1 {
+        margin-left: 69%;
         margin-top: -50%;
 
     }
-    .imgpd2{
-        margin-left:69%;
+
+    .imgpd2 {
+        margin-left: 69%;
         margin-top: 1%;
     }
-    .block{
+
+    .block {
         display: block;
     }
-    .inblock{
+
+    .inblock {
         margin-left: 67%;
-        margin-top:-38%;
+        margin-top: -38%;
         width: 50px;
     }
 }

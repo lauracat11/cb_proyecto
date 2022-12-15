@@ -8,4 +8,6 @@ $(function () {
         autoclose: false,
         todayHighlight: true,
     });
+    $(".calendario").datepicker("show");
 });
+
