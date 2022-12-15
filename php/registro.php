@@ -24,12 +24,12 @@ $err = "";
 
 if (mysqli_num_rows($res)>0){
     $err = "<div class='alert alert-danger'>El correo ya existe</div>";
-    header("Location: ../indexr.php?err=$err");
+    header("Location: /cb_proyecto/indexr.php?err=$err");
 }else{
     $sql="INSERT INTO users (ID, nombre, apellidos, email, pswd) VALUES ('$id', '$uname', '$auname', '$uemail', '$pswd')";
 
     if (mysqli_query($conn, $sql)){
-        header("Location: ../index.html");
+        header("Location: /cb_proyecto/index.html");
     }else{
         echo "Fallo al ingreasar el registro en: " . $sql . mysqli_error($conn);
     }

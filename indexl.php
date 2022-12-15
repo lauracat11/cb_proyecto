@@ -33,7 +33,7 @@
                     </g>
                 </g>
             </svg></div>
-            <form action="/CBP/php/login.php" method="post">
+            <form action="/cb_proyecto/php/login.php" method="post">
                 <div class="row">
                     <i class="fas fa-envelope"></i>
                     <input type="text" placeholder="Correu" name="uemail" required>
