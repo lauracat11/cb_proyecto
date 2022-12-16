@@ -1,33 +1,43 @@
+<!-- id reserva, nombre, zona, telefono, correo.  -->
+
 <html>
 <body>
     <?php
     require ('header.php');
-    $query = "SELECT * FROM reserve";
+    $query = "SELECT  FROM reserve";
 
-    echo '<table border="1" cellspacing="0" cellpadding="0">
-        <tr>    
-            <td>ID</td>
-            <td>ID_USER</td>
-            <td>SERVICIO</td>
-            <td>ZONA</td>
-            <td>FECHA</td>
-        </tr>';
+    echo '<table class="table">
+        <thead class="thead-dark">
+            <tr>    
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Zona</th>
+                <th>Telf</th>
+                <th>Correu</th>
+                <th>Data</th>
+            </tr>
+        </thead>';
 
         if ($result = $conn->query($query)){
             while ($row = $result->fetch_assoc()){
                 $filed1name = $row["ID"];
                 $filed2name = $row["USERS_ID"];
-                $filed3name = $row["servicio"];
+                $filed3name = $row[""];
                 $filed4name = $row["zzone"];
                 $filed5name = $row["ddate"];
+                $filed5name = $row[""];
             
-                echo '<tr>    
-                        <td>'.$filed1name.'</td>
-                        <td>'.$filed2name.'</td>
-                        <td>'.$filed3name.'</td>
-                        <td>'.$filed4name.'</td>
-                        <td>'.$filed5name.'</td>
-                    </tr>';
+                echo '<tbody>
+                        <tr>    
+                            <th scope="row">'.$filed1name.'</th>
+                            <td>'.$filed2name.'</td>
+                            <td>'.$filed3name.'</td>
+                            <td>'.$filed4name.'</td>
+                            <td>'.$filed5name.'</td>
+                            <td>'.$filed6name.'</td>
+
+                        </tr>
+                    </tbody>';
             };
             $result->free();
         };
