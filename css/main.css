@@ -624,10 +624,8 @@ body {
         margin-top: 40%;
         /* margin-left: 10%; */
         text-decoration: none;
-        font-size: 0.65rem;
+        font-size: 1.3rem;
         font-weight: bolder;
-        text-decoration: none;
-
     }
 
     .reservas_button:hover {
@@ -668,8 +666,8 @@ body {
         opacity: 40%;
         width: 80px;
         height: 47px;
-        margin-left: 63.7%;
-        margin-top: -26.7%;
+        margin-left: 63.5%;
+        margin-top: -27%;
         animation-name: fadeInOpacity2;
         animation-iteration-count: 1;
         animation-timing-function: ease-in;
@@ -749,7 +747,7 @@ body {
         transform: skew(70deg);
         opacity: 40%;
         margin-left: 66%;
-        margin-top: -21%;
+        margin-top: -22%;
         animation-name: fadeInOpacity2;
         animation-iteration-count: 1;
         animation-timing-function: ease-in;
