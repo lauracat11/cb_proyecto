@@ -68,6 +68,10 @@
                     <input type="text" placeholder="Correu" name="uemail" required>
                 </div>
                 <div class="row">
+                    <i class="fas fa-phone"></i>
+                    <input type="numeric" placeholder="Telefon" name="telf" required>
+                </div>
+                <div class="row">
                     <i class="fas fa-lock"></i>
                     <input type="password" placeholder="Contrasenya" name="pswd" required>
                 </div>
