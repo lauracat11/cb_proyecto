@@ -24,7 +24,7 @@
             </ul>
         </nav>
         
-        <div class="box">
+        <form class="box" action="/cb_proyecto/php/reservas.php" method="post">
             <div class="title_box">
                 <h1>PADDOC</h1>
             </div>
@@ -42,26 +42,20 @@
                 Calendario:
             </div>
             <p class="fecha" id="datepicker"> <br>
-                <input type="text"  class="calendario" required autofocus>
+                <input name="d" type="text"  class="calendario" required autofocus>
             </p>
             
-            
-            
-            
-            
-            
-            
-            
-            
-            <img src="../imgs/paddock1.png" class="paddock1" id="paddock1">
-            <img src="../imgs/paddock2.png" class="paddock2" id="paddock2">
-            <img src="../imgs/paddock3.png" class="paddock3" id="paddock3">
+            <input type="image" src="../imgs/paddock1.png" class="paddock1" id="paddock1" name="paddock1">
+            <input type="image" src="../imgs/paddock2.png" class="paddock2" id="paddock2" name="paddock2">
+            <input type="image" src="../imgs/paddock3.png" class="paddock3" id="paddock3" name="paddock3">
+            <input type="hidden" id="z" name="z" value="">
             <div class="text3">
                 FES CLIC PER SELECCIONAR UNA O MES PARTS DEL PADOC
             </div>
-            <a class="botonreservar" href="../html/admin.html">SOL·LICITAR</a>
+            <!-- <a type="submit" class="botonreservar" href="../html/admin.html">SOL·LICITAR</a> -->
+            <input type="submit" class="botonreservar" value="SOL·LICITAR">
             
-        </div>
+        </form>
         <div class="inblock">
             <img src="../imgs/imgpd1.png" class="imgpd1">
             <img src="../imgs/imgpd2.png" class="imgpd2">

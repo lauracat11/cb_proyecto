@@ -9,6 +9,7 @@
     echo '<table class="table">
         <thead class="thead-dark">
             <tr>    
+<<<<<<< Updated upstream
                 <th>Id</th>
                 <th>Nom</th>
                 <th>Zona</th>
@@ -30,8 +31,24 @@
                 echo '<tbody>
                         <tr>    
                             <th scope="row">'.$filed1name.'</th>
+=======
+                <td>ID</td>
+                <td>ID_USER</td>
+                <td>ZONA</td>
+                <td>FECHA</td>
+            </tr>';
+
+            if ($result = $conn->query($query)){
+                while ($row = $result->fetch_assoc()){
+                    $filed1name = $row["ID"];
+                    $filed2name = $row["USERS_ID"];
+                    $filed4name = $row["zzone"];
+                    $filed5name = $row["ddate"];
+                
+                    echo '<tr>    
+                            <td>'.$filed1name.'</td>
+>>>>>>> Stashed changes
                             <td>'.$filed2name.'</td>
-                            <td>'.$filed3name.'</td>
                             <td>'.$filed4name.'</td>
                             <td>'.$filed5name.'</td>
                             <td>'.$filed6name.'</td>
