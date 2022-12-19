@@ -70,7 +70,7 @@ li a {
 }
 
 .img_logo {
-    background-image: url("../imgs/logo.jpg");
+    background-image: url("../img/logo.jpg");
     width: 39vh;
     height: 11.6vh;
     display: flex;
@@ -146,6 +146,33 @@ li a {
     margin:auto;
     margin-top: 1rem;
 }
+.textoP{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: center;
+    /* align-items: center; */
+}
 
+.tituloT{
+    color: var(--rojoP);
+}
+.texto1 {
+    /* border: 1px solid red; */
+    margin-right: 50px;
+    width: 25%;
+}
+.texto1 p{
+    font-size: 14px;
+}
+.texto2{
+    font-size: 14px;
+    /* border: 1px solid red; */
+    width: 55%;
+    /* text-align: justify; */
 
-
+}
+.footer{
+    margin-top: 4rem;
+    height: 50px;
+    background-color: black;
+}
