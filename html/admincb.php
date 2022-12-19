@@ -38,7 +38,7 @@
 
         <aside class="position-fixed main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index.html" class="brand-link logo-bg">
+            <a href="../index.html" class="brand-link logo-bg">
                 <img src="../imgs/logo.jpg" class="img-fluid">
             </a>
             <div class="sidebar">
@@ -162,7 +162,7 @@
                             if ($result = $conn->query($query)){
                                 while ($row = $result->fetch_assoc()){
                                     $filed1name = $row["ID"];
-                                    $filed2name = $row["USERS_ID"];
+                                    $filed2name = $row["USER_ID"];
                                     $filed3name = $row["zzone"];
                                     // $filed4name = $row[""];
                                     // $filed5name = $row[""];
