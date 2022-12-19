@@ -19,8 +19,7 @@ if (mysqli_num_rows($res)>0){
     $sql = "INSERT INTO reserve (ID, zzone, ddate) VALUES ('$id', '$z', '$d')";
 
     if (mysqli_query($conn, $sql)){
-        echo "Se ha hecho la reserva 👏 <br>";
-        header ("Location: ../php/admin.php");
+        header ("Location: ../html/submit.html");
     }else{
         echo "Fallo al ingreasar el registro en: " . $sql . mysqli_error($conn);
     }

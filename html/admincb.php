@@ -141,45 +141,52 @@
                         </div>
                     </div>
             </section>
-            <table class="table">
-                <thead class="color-tabla">
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Nom</th>
-                    <th scope="col">Zona Solicitada</th>
-                    <th scope="col">Telf</th>
-                    <th scope="col">Correu</th>
-                    <th scope="col">Dies Solicitats</th>
-                    <th scope="col">Estat</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Joel Camacho Lopez</td>
-                    <td>Box #05</td>
-                    <td>664 970 035</td>
-                    <td>kidakoc598@gmail.com</td>
-                    <td>18/12/2022</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Alberto Amado Sanchez</td>
-                    <td>Paddoc Z1</td>
-                    <td>664 445 278</td>
-                    <td>kecab82074@gmail.com</td>
-                    <td>18/12/2022</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Jose Ignacio Mari Fernandez</td>
-                    <td>Sala Briefing</td>
-                    <td>772 467 160</td>
-                    <td>bobihoh583@gmail.com</td>
-                    <td>18/12/2022</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div>
+                <?php
+                    require ('../php/header.php');
+                    $query = "SELECT * FROM reserve";
+
+                    echo '<table class="table">
+                        <thead class="color-tabla">
+                            <tr>    
+                                <th scope="col">#</th>
+                                <th scope="col">ID_USER</th>
+                                <th scope="col">Zona Solicitada</th>
+                                <th scope="col">Telf</th>
+                                <th scope="col">Correu</th>
+                                <th scope="col">Dies Solicitats</th>
+                                <th scope="col">Estat</th>
+                            </tr>
+                        </thead>';
+
+                            if ($result = $conn->query($query)){
+                                while ($row = $result->fetch_assoc()){
+                                    $filed1name = $row["ID"];
+                                    $filed2name = $row["USERS_ID"];
+                                    $filed3name = $row["zzone"];
+                                    // $filed4name = $row[""];
+                                    // $filed5name = $row[""];
+                                    $filed4name = "null";
+                                    $filed5name = "null2";
+                                    $filed6name = $row["ddate"];
+                                
+                                    echo '<tr>    
+                                            <th scope="row">'.$filed1name.'</th>
+                                            <td>'.$filed2name.'</td>
+                                            <td>'.$filed3name.'</td>
+                                            <td>'.$filed4name.'</td>
+                                            <td>'.$filed5name.'</td>
+                                            <td>'.$filed6name.'</td>
+
+                                        </tr>
+                                    </tbody>';
+                            };
+                            $result->free();
+                        };
+
+                    mysqli_close($conn);
+                ?> 
+            </div>
         </div>
     </div>
     </section>
