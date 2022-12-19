@@ -80,6 +80,10 @@
     background-color: rgb(179, 0, 18);
     color: #FFFFFF;
 }
+.color-tabla{
+    background-color: black;
+    color: #FFFFFF;
+}
 .mamon{
     position:fixed;
 }
