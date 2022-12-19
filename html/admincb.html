@@ -10,25 +10,25 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Tempusdominus Bootstrap 4 -->
-    <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
     <!-- iCheck -->
-    <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- JQVMap -->
-    <link rel="stylesheet" href="../plugins/jqvmap/jqvmap.min.css">
+    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="../css/adminlte.min.css">
+    <link rel="stylesheet" href="css/adminlte.min.css">
     <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Daterange picker -->
-    <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
-    <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.min.css">
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
 
-    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -38,14 +38,14 @@
 
         <aside class="position-fixed main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="../index.html" class="brand-link logo-bg">
-                <img src="../imgs/logo.jpg" class="img-fluid">
+            <a href="index.html" class="brand-link logo-bg">
+                <img src="imgs/logo.jpg" class="img-fluid">
             </a>
             <div class="sidebar">
                 <li class="nav-header h3 list-unstyled mx-auto text-light text-center mt-4">PANELL DE CONTROL</li>
                 <div class="user-panel mt-4 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="../imgs/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                        <img src="/imgs/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
                         <a href="#" class="d-block h5">AdminCB</a>
@@ -66,7 +66,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="calendar.html" class="nav-link">
+                            <a href="pages/calendar.html" class="nav-link">
                                 <i class="nav-icon far fa-calendar-alt"></i>
                                 <p class="h4">
                                     CALENDARI
@@ -103,11 +103,11 @@
             <!-- /.content-header -->
 
             <!-- Main content -->
-            <section class="content">
+            <section class="content justify-content-center">
                 <div class="container-fluid">
                     <!-- Small boxes (Stat box) -->
                     <div class="row d-flex justify-content-evenly">
-                        <div class="col-lg-3 col-6">
+                        <div class="col-lg-4 col-6">
                             <!-- small box -->
                             <div class="small-box cajas-info">
                                 <div class="inner">
@@ -118,7 +118,7 @@
                             </div>
                         </div>
                         <!-- ./col -->
-                        <div class="col-lg-3 col-6">
+                        <div class="col-lg-4 col-6">
                             <!-- small box -->
                             <div class="small-box cajas-info">
                                 <div class="inner">
@@ -129,7 +129,7 @@
                             </div>
                         </div>
                         <!-- ./col -->
-                        <div class="col-lg-3 col-6">
+                        <div class="col-lg-4 col-6">
                             <!-- small box -->
                             <div class="small-box cajas-info">
                                 <div class="inner">
@@ -141,6 +141,45 @@
                         </div>
                     </div>
             </section>
+            <table class="table">
+                <thead class="color-tabla">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Zona Solicitada</th>
+                    <th scope="col">Telf</th>
+                    <th scope="col">Correu</th>
+                    <th scope="col">Dies Solicitats</th>
+                    <th scope="col">Estat</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Joel Camacho Lopez</td>
+                    <td>Box #05</td>
+                    <td>664 970 035</td>
+                    <td>kidakoc598@gmail.com</td>
+                    <td>18/12/2022</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Alberto Amado Sanchez</td>
+                    <td>Paddoc Z1</td>
+                    <td>664 445 278</td>
+                    <td>kecab82074@gmail.com</td>
+                    <td>18/12/2022</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Jose Ignacio Mari Fernandez</td>
+                    <td>Sala Briefing</td>
+                    <td>772 467 160</td>
+                    <td>bobihoh583@gmail.com</td>
+                    <td>18/12/2022</td>
+                  </tr>
+                </tbody>
+              </table>
         </div>
     </div>
     </section>
@@ -156,32 +195,32 @@
     <!-- ./wrapper -->
 
     <!-- jQuery -->
-    <script src="../plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
-    <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
         $.widget.bridge('uibutton', $.ui.button)
     </script>
     <!-- Bootstrap 4 -->
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/Chart.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Chart.min.js"></script>
     <!-- Sparkline -->
-    <script src="../plugins/sparklines/sparkline.js"></script>
+    <script src="plugins/sparklines/sparkline.js"></script>
     <!-- JQVMap -->
-    <script src="../plugins/jqvmap/jquery.vmap.min.js"></script>
-    <script src="../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
 
-    <script src="../plugins/jquery-knob/jquery.knob.min.js"></script>
+    <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
     <!-- daterangepicker -->
-    <script src="../plugins/moment/moment.min.js"></script>
-    <script src="../plugins/daterangepicker/daterangepicker.js"></script>
+    <script src="plugins/moment/moment.min.js"></script>
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>
     <!-- Tempusdominus Bootstrap 4 -->
-    <script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
     <!-- Summernote -->
-    <script src="../plugins/summernote/summernote-bs4.min.js"></script>
+    <script src="plugins/summernote/summernote-bs4.min.js"></script>
     <!-- overlayScrollbars -->
-    <script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
     <!-- AdminLTE App -->
 
 </body>
