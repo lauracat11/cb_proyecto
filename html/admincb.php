@@ -162,7 +162,7 @@
                             if ($result = $conn->query($query)){
                                 while ($row = $result->fetch_assoc()){
                                     $filed1name = $row["ID"];
-                                    $filed2name = $row["USERS_ID"];
+                                    $filed2name = $row["USER_ID"];
                                     $filed3name = $row["zzone"];
                                     // $filed4name = $row[""];
                                     // $filed5name = $row[""];
